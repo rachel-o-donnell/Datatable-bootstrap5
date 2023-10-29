@@ -11,7 +11,21 @@
     <link rel="stylesheet" href="https://cdn.datatables.net/1.13.6/css/dataTables.bootstrap5.min.css">
     
 </head>
-<body>
+<body onload="getData()">
+<div class="container mt-5 mb-5">
+    <table class="table tabel-striped" id="userTable">
+        <thead>
+            <th>FName</th>
+            <th>LName</th>
+            <th>Age</th>
+            <th>Email</th>
+            <th>Gender</th>
+        </thead>
+        <tbody id="tbody">
+
+        </tbody>
+    </table>
+</div>
     
 <script src="./dataTable.js"></script>
 <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
